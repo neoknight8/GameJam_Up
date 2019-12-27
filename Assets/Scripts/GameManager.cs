@@ -15,14 +15,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
     void Start()
     {
         StartCoroutine(StartTextAnimation());
-        //HP = 3;
-        //StaircaseManager.Instance.SetOnCurrentStairChanged(
-        //    (currentBlockPosition) =>
-        //    {
-        //    ChangeScoreText(currentBlockPosition.y);
-        //    }
-        //);
-        //SetScoreImage();
     }
 	// Update is called once per frame
 	void Update () {
@@ -78,6 +70,5 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
         yield return new WaitForSeconds(1f);
         startText.SetText("");
         StartGame();
-
     }
 }
